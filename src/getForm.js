@@ -1,4 +1,8 @@
-var form1  = '<iframe id="surveyFrame" src="./forms/1pgForm.html" width=1260 height="2250" frameborder="0" marginheight="0" marginwidth="150" style="background: #FFFFFF;">Loading...</iframe>'
+var form1  = '<iframe id="surveyFrame" src="./forms/1pgForm.html" width=1260 height="2400" frameborder="0" marginheight="0" marginwidth="150" style="background: #FFFFFF;">Loading...</iframe>'
+//var testI = '<img src = "http://www.tcgreenmedia.com/wp-content/uploads/2014/07/google-developers-v01-510x380.png">';
+
 
 document.getElementById("form").innerHTML = (form1);
+//document.getElementById("form").innerHTML = (testI);
+
 //document.getElementById("imageLocation").innerHTML = (document.write(images));
