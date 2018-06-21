@@ -40,7 +40,7 @@ service = build('photoslibrary', 'v1', http=creds.authorize(Http()))
 # note BASE_URL=wMAX_WIDTH-hMAX_HEIGHT, ref: https://developers.google.com/photos/library/guides/access-media-items#base-urls
 
 nowDate = datetime.datetime.now()
-cutoffDate = nowDate - dateutil.relativedelta.relativedelta(months=2) # cut off at 2 months before today
+cutoffDate = nowDate - dateutil.relativedelta.relativedelta(months=1) # cut off at 2 months before today
 earliestDate = nowDate
 creationTime = nowDate
 
