@@ -13,7 +13,8 @@
     <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
   
   	<link rel="stylesheet" href="./src/style.css">
-
+  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
 
     <!--Currently there is nothing in this js file just framework from Polymer-->
     <!--<script type="module" src="/src/interface-1.js"></script>-->
@@ -21,30 +22,36 @@
 		
   </head>
   <body>
-  	<interface-1>		    
-    
-	<div id = "imageLocation" >
+     	<!--<a href="#" class="previous">&laquo; Previous</a>
+		<a href="#" class="next">Next &raquo;</a>
+
+		<a href="#" class="previous round">&#8249;</a>
+		<a href="#" class="next round">&#8250;</a> -->
+  	<interface-1>
+
+	<div id = "imageLocation">
     	<!-- Library to d3-->
+
     	<script src='https://d3js.org/d3.v4.min.js'></script>
     	<!-- Script that parses user image data to get image URLs-->
-    	<script src="./src/parsing.js"></script>
+    	<script src="./src/parsing2.js"></script>
+
     </div>
     
-	<div id = "form" style="position:absolute; margin-left:720px; margin-right:720px;">
-		<!--Script to load google form -->
-		<script src="./src/getForm.js"></script>
+        
+    <div class="Gform" style="position:relative; margin-left:720px; margin-right:720px;">
+		<!--Script to load empty google form-->
+		<iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSeJvrnlwHIr7Oqjuh7B2EA6NDFiSJ5uytflof1LydrF9DxSaw/viewform" width=1260 height="3300" align="left" frameborder="0" marginheight="0" marginwidth="150" style="background: #FFFFFF;">Loading...</iframe>
     </div>
 
   	</interface-1>
-		<!--Test Image Display-->
-	<!--<img src="http://www.tcgreenmedia.com/wp-content/uploads/2014/07/google-developers-v01-510x380.png", width = 350, height = 300>-->
-	<!--<img src="http://www.gstatic.com/webp/gallery/3.webp">-->
-		<!--Direct insert of Google Form-->
-		<!--<iframe id="surveyFrame" src="https://goo.gl/forms/gHPzIFzEFSN8CTjE2" width=1260 height="3075" frameborder="0" marginheight="0" marginwidth="150" style="background: #FFFFFF;">Loading...</iframe>-->
-    
 
-    
-    
+	<!-- Calls the script to get the prefilled Urls-->
+ 	<script src="./src/prefilledURL.js"></script>
+	<!--Call the script to change the source of the iframe based on the id ="form"-->
+	<script src = "./src/formHandler.js"></script>
+
+
+
   </body>
 </html>
-
